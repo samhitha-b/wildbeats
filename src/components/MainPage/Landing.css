@@ -56,7 +56,7 @@ body {
   align-items: center;
 }
 .image {
-  background-image: url(SliderData.js);
+  background-image: url(./components/MainPage/SliderData.js);
   background-size: cover;
   width: 100vw;
   height: 120vh;
