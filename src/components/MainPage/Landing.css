@@ -34,20 +34,6 @@ body {
   max-width: fit-content;
   font-family: "Lexend Deca", sans-serif;
 }
-@media screen and (max-width: 450px) {
-  .text-style {
-    margin-top: 35%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .text-style {
-    margin-top: 50%;
-    margin-left: 20%;
-  }
-  .image {
-    width: 250%;
-  }
-}
 .slider {
   position: absolute;
   height: 100vh;
@@ -71,14 +57,23 @@ body {
   opacity: 1;
   transition-duration: 0.3s;
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 450px) {
+  .text-style {
+    margin-top: 50%;
+    margin-left: 20%;
+  }
   .image {
-    background-size: cover;
+    width: 250%;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .text-style {
+  .image {
+    background-size: cover;
+  }
+    .text-style {
     margin-top: 20%;
   }
 }
+
