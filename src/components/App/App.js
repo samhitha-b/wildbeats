@@ -1,14 +1,14 @@
 import './App.css';
-import Landing from '../MainPage/Landing';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Landing from './components/MainPage/Landing';
+import ImageSlider from './components/MainPage/ImageSlider';
+import { SliderData } from "./components/MainPage/SliderData";
+
 
 function App() {
   return (
   <div className="App">
-      <Navbar/>
-      <Landing/>
-      <Footer />
+    <ImageSlider slides={SliderData}/>
+    <Landing/>
     </div>
   );
 }

@@ -1,3 +1,79 @@
-.container{
-   height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
 }
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.light {
+  color: rgba(27, 38, 129, 1);
+}
+.text-style {
+  border-style: solid;
+  border: none;
+  border-radius: 10px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 5%;
+  height: auto;
+  background: radial-gradient(
+    119.18% 817.36% at 15.33% 45.29%,
+    rgba(252, 240, 204, 0.7) 0%,
+    rgba(196, 196, 196, 0.35) 100%
+  );
+  backdrop-filter: blur(3px);
+}
+.below {
+  font-size: 2.5vw;
+  margin-left: 23%;
+  color: rgba(0, 0, 0, 1);
+}
+.word-style {
+  font-size: 7vw;
+  margin: auto;
+  max-width: fit-content;
+  font-family: "Lexend Deca", sans-serif;
+}
+.slider {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  background-image: url(./components/MainPage/SliderData.js);
+  background-size: cover;
+  width: 100vw;
+  height: 120vh;
+  background-position: center;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 450px) {
+  .text-style {
+    margin-top: 50%;
+    margin-left: 20%;
+  }
+  .image {
+    width: 250%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .image {
+    background-size: cover;
+  }
+    .text-style {
+    margin-top: 20%;
+  }
+}
+
