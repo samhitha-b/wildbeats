@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 body {
   font-family: "Lexend Deca", sans-serif;
@@ -8,72 +10,76 @@ body {
 .light {
   color: rgba(27, 38, 129, 1);
 }
-.text-style {
-  border-style: solid;
-  border: none;
-  border-radius: 10px;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 5%;
-  height: auto;
-  background: radial-gradient(
-    119.18% 817.36% at 15.33% 45.29%,
-    rgba(252, 240, 204, 0.7) 0%,
-    rgba(196, 196, 196, 0.35) 100%
-  );
-  backdrop-filter: blur(3px);
+.slider-contain{
+  position: relative;
+  z-index: 0;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
 }
-.below {
-  font-size: 2.5vw;
-  margin-left: 23%;
-  color: rgba(0, 0, 0, 1);
+.slide{
+  width:100vw;
+  height:100vh;
 }
-.word-style {
-  font-size: 7vw;
-  margin: auto;
-  max-width: fit-content;
-  font-family: "Lexend Deca", sans-serif;
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  
 }
-.slider {
+.wrapper{
+  position: relative;
+}
+.heading{
   position: absolute;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color:#D38740;
+  font-size: 130px;
+  z-index: 1;
+  left: 10%;
+  top: 50%;
+  transform: translate(-10%,-50%);
 }
-.image {
-  background-image: url(./components/MainPage/SliderData.js);
-  background-size: cover;
-  width: 100vw;
-  height: 120vh;
-  background-position: center;
-}
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-.slide.active {
-  opacity: 1;
-  transition-duration: 0.3s;
-}
-
-@media screen and (max-width: 450px) {
-  .text-style {
-    margin-top: 50%;
-    margin-left: 20%;
-  }
-  .image {
-    width: 250%;
+@media screen and (max-width: 795px){
+  .heading{
+    font-size: 90px;
+    left:50%;
+    transform: translate(-50%,-50%);
   }
 }
 
-@media screen and (max-width: 380px) {
-  .image {
-    background-size: cover;
+@media  screen and (max-width:570px) {
+  .heading{
+    font-size: 60px;
   }
-    .text-style {
-    margin-top: 20%;
+}
+  
+.subheading{
+  position: absolute;
+  font-size: 40px;
+  color:white;
+  font-weight: 300;
+  z-index: 1;
+  left: 12%;
+  top: 60%;
+  transform: translate(-12%,-60%);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 795px){
+  .subheading{
+    font-size: 30px;
+    top:58%;
+    left:50%;
+    transform: translate(-50%,-58%);
+  }
+}
+
+@media  screen and (max-width:570px) {
+  .subheading{
+    font-size: 20px;
+    top:55%;
+    transform: translate(-50%,-55%);
   }
 }
 
