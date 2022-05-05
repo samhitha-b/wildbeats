@@ -36,9 +36,9 @@ img{
   color:#D38740;
   font-size: 130px;
   z-index: 1;
-  left: 10%;
+  left: 50%;
   top: 50%;
-  transform: translate(-10%,-50%);
+  transform: translate(-50%,-50%);
 }
 @media screen and (max-width: 795px){
   .heading{
@@ -60,9 +60,9 @@ img{
   color:white;
   font-weight: 300;
   z-index: 1;
-  left: 12%;
+  left: 50%;
   top: 60%;
-  transform: translate(-12%,-60%);
+  transform: translate(-50%,-60%);
   white-space: nowrap;
 }
 
@@ -70,7 +70,6 @@ img{
   .subheading{
     font-size: 30px;
     top:58%;
-    left:50%;
     transform: translate(-50%,-58%);
   }
 }
