@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./upcoming.css";
+import "./Events.css";
 const Events = () => {
   // const dDay = new Date(2022, 2, 29, 0, 0, 0, 0).getTime();
   // const timerFunc = () => {
