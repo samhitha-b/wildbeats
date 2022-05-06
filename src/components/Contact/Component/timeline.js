@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Collapsible from 'react-collapsible';
 
 
-export default function Time(){
+export default function Timeline(){
 
     const [timeHover, setTimeHover] = useState(0);
 
