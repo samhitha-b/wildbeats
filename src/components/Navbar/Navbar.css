@@ -7,20 +7,20 @@
 nav {
   z-index: 100;
   height: 11vh;
-  margin-bottom: 10%;
   /* background: ; */
-  position: sticky;
+  position: fixed;
   font-family: "Lexend Deca", sans-serif;
   width: 100%;
-  border-radius: 0 0 15px 15px;
   transition: transform 300ms ease-in-out;
 }
+.nav-curve {
+  border-radius: 0 0 15px 15px;
+}
+
 .toggle-container {
-  /* background:green; */
   height: 100%;
   display: flex;
   align-items: center;
-  /* position: fixed; */
 }
 .toggle-nav {
   z-index: 99;
@@ -70,10 +70,13 @@ nav {
   }
 }
 @media screen and (min-width: 769px) {
-  .nav{
+  .nav {
     background: black;
-    position: fixed;
-    border-radius: 0 0 15px 15px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: sticky;
+    top: 0;
+    /* border-radius: 0 0 15px 15px; */
   }
   .toggle-container {
     display: none;
@@ -91,18 +94,23 @@ nav {
     justify-content: center;
     gap: 1.5rem;
   }
-  .links a{
+  .links a {
     color: white;
+  }
+  .translate {
+    transform: translateY(-100%);
   }
 }
 @media screen and (min-width: 850px) {
   .toggle-container {
     display: none;
   }
-  .nav{
+  .nav {
     background: black;
-    position: fixed;
-    border-radius: 0 0 15px 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* border-radius: 0 0 15px 15px; */
     /* height: 10vh; */
     display: flex;
     align-items: center;
@@ -112,7 +120,7 @@ nav {
     all: unset;
     transform: translateX(0%);
     /* background: rgba(0, 0, 0, 0.534); */
-    font-size: 18px; 
+    font-size: 18px;
   }
   .links ul {
     display: flex;
@@ -124,19 +132,16 @@ nav {
     font-weight: 500;
     /* color: black; */
   }
-  .links a{
+  .links a {
     color: rgb(255, 255, 255);
+  }
+  .translate {
+    transform: translateY(-100%);
   }
   /* .solid-nav {
     background: rgb(7, 11, 59);
     border-radius: 0 0 15px 15px;
     position: fixed;
     transform: translateY(0%);
-  } */
-  /* .translate {
-    transform: translateY(-100%);
-  }
-  .translate-down {
-    transform: translateY(-100%);
   } */
 }
