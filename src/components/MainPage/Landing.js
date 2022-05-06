@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./Landing.css";
+import About from "./About";
+import Events from "./Events";
 const Landing = () => {
   const settings = {
     dots: false,
@@ -16,6 +18,7 @@ const Landing = () => {
 
   };
   return (
+    <>
     <div className="wrapper">
       <h1 className="heading">WILDBEATS</h1>
       <h1 className="subheading">The Cultural Club of IIIT Kottayam</h1>
@@ -42,6 +45,9 @@ const Landing = () => {
       </Slider>
     </div>
     </div>
+    <About/>
+    <Events/>
+    </>
   );
 };
 

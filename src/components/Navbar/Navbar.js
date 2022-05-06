@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -24,7 +25,6 @@ const Navbar = () => {
   // });
   document.addEventListener("scroll", () => {
     var solidNav = document.querySelector(".nav");
-
     if (window.pageYOffset > 100 && window.pageYOffset < 450) {
       solidNav.classList.add("translate");
     } else if (window.pageYOffset >= 450) {
@@ -45,39 +45,39 @@ const Navbar = () => {
       <div className={isOpen ? "links show" : "links"}>
         <ul>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/gallery">
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/art">
               Art
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/music">
               Music
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/drama">
               Drama
-            </a>
+            </Link>
           </li>
           <li className="link-list">
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/dance">
               Dance
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link-list" href="#">
+            <Link className="link-list" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
