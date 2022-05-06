@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function B(){
+export default function NewBody(){
     return(
         <div className="bg">
             <div className="newbody">
