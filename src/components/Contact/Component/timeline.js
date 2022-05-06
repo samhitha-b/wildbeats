@@ -1,18 +1,5 @@
 import React, { useState } from "react";
-import Men from "./mentor";
 import Collapsible from 'react-collapsible';
-import Led19 from "./lead19";
-
-// import bivek from "../images/bivek.png";
-// import rahul from "../images/rahul.png";
-
-// import keerthi from "../images/Keerthi.png";
-// import mekala from "../images/Mekala.png";
-
-// import sai from "../images/sai.png";
-// import srija from "../images/srija.png";
-// import sandeep from "../images/sandeep.png";
-// import pushpak from "../images/pushpak.png";
 
 
 export default function Time(){
@@ -30,8 +17,6 @@ export default function Time(){
                                 className="timeline-content" 
                                 open = {timeHover === 1 ? true : false}
                             >
-                                {/* <Men /> */}
-                                {/* <Led20 /> */}
                                 <div className="mentor">
                                     <div>
                                         <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img"/>
@@ -55,7 +40,6 @@ export default function Time(){
                                 className="timeline-content"
                                 open = {timeHover === 2 ? true : false}
                             >
-                                {/* <Men /> */}
                                 
                                 <div className="mentor">
                                     <div>
@@ -69,7 +53,6 @@ export default function Time(){
                                         <h4>Mentor</h4>
                                     </div>
                                 </div>
-                                {/* <Led19 /> */}
                                 
                                 <div className="lead">
                                     <div className="lead1-19">
@@ -107,9 +90,6 @@ export default function Time(){
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </Collapsible>
                         </div>
                     </li>
@@ -120,7 +100,6 @@ export default function Time(){
                                 className="timeline-content"
                                 open = {timeHover === 3 ? true : false}
                             >
-                                {/* <Men /> */}
                                 <div className="mentor">
                                     <div>
                                         <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877544/Wildbeats-ppl/sai_dnbthd.png" className="mentor-img"/>
@@ -143,7 +122,6 @@ export default function Time(){
                                 className="timeline-content"
                                 open = {timeHover === 4 ? true : false}
                             >
-                                {/* <Men /> */}
                                 <div className="mentor">
                                     <div>
                                         <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877543/Wildbeats-ppl/pushpak_bq9zjx.png" className="mentor-img"/>
@@ -159,11 +137,8 @@ export default function Time(){
                             </Collapsible>
                         </div>
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
     )
 }

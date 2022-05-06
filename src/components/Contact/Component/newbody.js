@@ -1,8 +1,4 @@
 import React from "react";
-import Fac from "./faculty";
-import Men from "./mentor";
-import Led from "./lead";
-
 
 export default function B(){
     return(
@@ -15,14 +11,11 @@ export default function B(){
                     </div>
 
                     <div className="newbody-members">
-                        {/* <Fac /> */}
                         <div className="faculty">
                             <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1649086255/Wildbeats-ppl/panchami-modified_wvr9ph.png" className="faculty-img"/>
                             <h1>Dr. Panchami V</h1>
                             <h4>Faculty In-Charge</h4>
                         </div>
-                        {/* <Men /> */}
-
 
                         <div className="mentor-newbody">
                             <div>
@@ -36,7 +29,6 @@ export default function B(){
                                 <h4>Mentor</h4>
                             </div>
                         </div>
-                        {/* <Led /> */}
 
 
                         <div className="lead">
