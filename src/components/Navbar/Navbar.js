@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -23,6 +22,19 @@ const Navbar = () => {
   //   }
   //   // console.log(solidNav);
   // });
+  document.addEventListener("scroll", () => {
+    var solidNav = document.querySelector(".nav");
+
+    if (window.pageYOffset > 100 && window.pageYOffset < 450) {
+      solidNav.classList.add("translate");
+    } else if (window.pageYOffset >= 450) {
+      solidNav.classList.add("nav-curve");
+      solidNav.classList.remove("translate");
+    } else {
+      solidNav.classList.remove("nav-curve");
+      solidNav.classList.remove("translate");
+    }
+  });
   return (
     <nav className="nav">
       <div className="toggle-container">
@@ -33,39 +45,39 @@ const Navbar = () => {
       <div className={isOpen ? "links show" : "links"}>
         <ul>
           <li>
-            <Link className="link-list" to="/">
+            <a className="link-list" href="#">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="link-list" to="/gallery">
+            <a className="link-list" href="#">
               Gallery
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="link-list" to="/art">
+            <a className="link-list" href="#">
               Art
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="link-list" to="/music">
+            <a className="link-list" href="#">
               Music
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="link-list" to="/drama">
+            <a className="link-list" href="#">
               Drama
-            </Link>
+            </a>
           </li>
           <li className="link-list">
-            <Link className="link-list" to="/dance">
+            <a className="link-list" href="#">
               Dance
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="link-list" to="/contact">
+            <a className="link-list" href="#">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
