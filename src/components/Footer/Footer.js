@@ -7,26 +7,27 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import "./Footer.css";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="socials">
-        <a href="#">
+        <Link to="#">
           <FaTwitter />
-        </a>
-        <a href="#">
+        </Link> 
+        <Link to="#">
           <FaFacebook />
-        </a>
-        <a href="#">
+        </Link> 
+        <Link to="#">
           <FaLinkedin />
-        </a>
-        <a href="#">
+        </Link> 
+        <Link to="#">
           <FaInstagram />
-        </a>
-        <a href="#">
+        </Link> 
+        <Link to="#">
           <FaTwitter />
-        </a>
+        </Link> 
       </div>
       <div className="footer-text">
         <p>Made with</p>&nbsp;

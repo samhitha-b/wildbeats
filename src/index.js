@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App/App';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './components/MainPage/Landing';
 import Gallery from './components/Gallery/Gallery';
@@ -13,7 +14,7 @@ import Contact from './components/Contact/Contact';
 
 ReactDOM.render(
   <BrowserRouter>
-  <App/>
+  <Navbar/>
   <Routes>
     <Route exact path="/" element={<Home/>} />
     <Route path="/gallery" element={<Gallery/>} />
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Route path="/dance" element={<Dance/>} />
     <Route path="/contact" element={<Contact/>} />
     </Routes>
+  <Footer/>
 </BrowserRouter>,
   document.getElementById('root')
 );

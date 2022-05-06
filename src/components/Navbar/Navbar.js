@@ -8,31 +8,13 @@ const Navbar = () => {
   const handelClick = () => {
     setIsopen(!isOpen);
   };
-  // document.addEventListener("scroll", () => {
-  //   var solidNav = document.querySelector(".nav");
-  //   var colorLinks = document.querySelectorAll(".link-list");
-
-  //   if (window.pageYOffset > 1 && window.pageYOffset <= 220) {
-  //     solidNav.classList.add("translate");
-  //   } else if (window.pageYOffset > 220) {
-  //     solidNav.classList.add("solid-nav");
-  //     solidNav.classList.remove("translate");
-  //   } else {
-  //     solidNav.classList.remove("solid-nav");
-  //     solidNav.classList.remove("translate");
-  //   }
-  //   // console.log(solidNav);
-  // });
   document.addEventListener("scroll", () => {
     var solidNav = document.querySelector(".nav");
-    if (window.pageYOffset > 100 && window.pageYOffset < 450) {
-      solidNav.classList.add("translate");
-    } else if (window.pageYOffset >= 450) {
+
+    if (window.pageYOffset > 150) {
       solidNav.classList.add("nav-curve");
-      solidNav.classList.remove("translate");
     } else {
       solidNav.classList.remove("nav-curve");
-      solidNav.classList.remove("translate");
     }
   });
   return (
