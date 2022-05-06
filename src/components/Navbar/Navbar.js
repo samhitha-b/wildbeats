@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,21 +8,15 @@ const Navbar = () => {
   const handelClick = () => {
     setIsopen(!isOpen);
   };
-  // document.addEventListener("scroll", () => {
-  //   var solidNav = document.querySelector(".nav");
-  //   var colorLinks = document.querySelectorAll(".link-list");
+  document.addEventListener("scroll", () => {
+    var solidNav = document.querySelector(".nav");
 
-  //   if (window.pageYOffset > 1 && window.pageYOffset <= 220) {
-  //     solidNav.classList.add("translate");
-  //   } else if (window.pageYOffset > 220) {
-  //     solidNav.classList.add("solid-nav");
-  //     solidNav.classList.remove("translate");
-  //   } else {
-  //     solidNav.classList.remove("solid-nav");
-  //     solidNav.classList.remove("translate");
-  //   }
-  //   // console.log(solidNav);
-  // });
+    if (window.pageYOffset > 150) {
+      solidNav.classList.add("nav-curve");
+    } else {
+      solidNav.classList.remove("nav-curve");
+    }
+  });
   return (
     <nav className="nav">
       <div className="toggle-container">
