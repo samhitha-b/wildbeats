@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;600&display=swap');
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca';
+}
+
+html,body {
+  height:100%;
+  width:100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:crimson;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(238,133,34);
+}
+
+#root {
+  width:100%;
+  height: 100%;
+}
+
+.landing {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.gallery-home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fcd404;
+  padding: 2em;
+}
+
+.gallery-home>h1 {
+  cursor: default;
+  font-size: 5em;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photos {
+  padding: 20px;
+  width: 100%;
+  background-color: #fcfb04;
+}
+
+.event {
+  max-width: 93.75vw;
+  background-color:#fbad3c;
+  border-radius: 15px;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-inline: auto;
+  margin-bottom:20px;
+  display: grid;
+  grid-template-columns: repeat(3,28vw);
+  grid-template-rows: repeat(3,28vw);
+  grid-template-areas: "one one two"
+                       "three four two"
+                       "three five five";
+  justify-content: center;
+  gap: 12px;
+}
+
+.event>.image{
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  cursor: default;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.719);
+  color: rgb(228, 228, 228);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 600;
+  transition: opacity 150ms ease-in-out;
+}
+
+.image:hover > .caption {
+  opacity: 100;
+}
+
+/* Images in the events */
+
+#image-1 {
+  background-image: url("../../assets/Gallery/diwali.jpg");  
+  background-position:center 80%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  grid-area: one;
+}
+
+#image-2 {
+  background-image: url("../../assets/Gallery/onam.JPG");  
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  grid-area: two;
+}
+
+#image-3 {
+  background-image: url("../../assets/Gallery/rep_day2.JPG");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  grid-area: three;
+}
+
+#image-4 {
+    background-image: url("../../assets/Gallery/ind_day2.JPG");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    grid-area: four;
+}
+
+#image-5 {
+    background-image: url("../../assets/Gallery/sankranti.JPG");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    grid-area: five;
+}
+
+#image-6 {
+    background-image: url("../../assets/Gallery/ind_day.JPG");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: one;
+}
+
+#image-7 {
+    background-image: url("../../assets/Gallery/rep_day.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: two;
+}
+
+#image-8 {
+    background-image: url("../../assets/Gallery/enlace.JPG");
+    background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: three;
+}
+
+#image-9 {
+    background-image: url("../../assets/Gallery/ebsb.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: four;
+}
+
+#image-10 {
+    background-image: url("../../assets/Gallery/traditional.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: five;
+}
+
+
+/* Responsiveness */
+
+@media (max-width:850px) {
+  .gallery-home>h1 {
+    font-size: 2.5em;
+  }
+
+  .event {
+    grid-template-columns: repeat(3,27vw);
+    grid-template-rows: repeat(3,27vw);
+    grid-template-areas: "one one two"
+                         "one one two"
+                         "three four four";
+    gap: 7px;  
+  }
+  #image-5,#image-10 {
+    display:none;
+  }
+}
+
+@media (max-width:450px) {
+  .event {
+    padding: 12px;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vw 40vw 40vw;
+    grid-template-areas: "one two"
+                         "three two"
+                         "four four";
+    gap: 5px;
+  }
+
+  #image-5,#image-10 {
+    display:none;
+  }
+
+  .caption {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    transition: opacity 150ms ease-in-out;
+    font-weight: 200;
+  }
+}
