@@ -1,3 +1,84 @@
-.container{
-   height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.light {
+  color: rgba(27, 38, 129, 1);
+}
+.slider-contain{
+  position: relative;
+  z-index: 0;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+}
+.slide{
+  width:100vw;
+  height:100vh;
+}
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  
+}
+.wrapper{
+  position: relative;
+}
+.heading{
+  position: absolute;
+  color:#D38740;
+  font-size: 130px;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@media screen and (max-width: 795px){
+  .heading{
+    font-size: 90px;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+@media  screen and (max-width:570px) {
+  .heading{
+    font-size: 60px;
+  }
+}
+  
+.subheading{
+  position: absolute;
+  font-size: 40px;
+  color:white;
+  font-weight: 300;
+  z-index: 1;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-60%);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 795px){
+  .subheading{
+    font-size: 30px;
+    top:58%;
+    transform: translate(-50%,-58%);
+  }
+}
+
+@media  screen and (max-width:570px) {
+  .subheading{
+    font-size: 20px;
+    top:55%;
+    transform: translate(-50%,-55%);
+  }
+}
+

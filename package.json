@@ -1,6 +1,7 @@
 {
   "name": "wildbeats",
   "version": "0.1.0",
+  "homepage": "https://samhitha-b.github.io/wildbeats",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -9,12 +10,17 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-scripts": "^5.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
