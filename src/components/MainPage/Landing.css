@@ -17,6 +17,12 @@ body {
   height:100vh;
   overflow: hidden;
 }
+.slick-frame {
+  visibility: hidden;
+}
+.slick-frame.slick-initialized {
+  visibility: visible;
+}
 .slide{
   width:100vw;
   height:100vh;
