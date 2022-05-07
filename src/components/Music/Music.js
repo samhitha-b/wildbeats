@@ -6,8 +6,6 @@ import SecondSectionImage from '../../assets/Music_Club/Section-2.png'
 import ThirdSectionImage from '../../assets/Music_Club/Section-3.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
 import { nanoid } from 'nanoid'
 
 const Music = () => {
@@ -90,10 +88,8 @@ const Music = () => {
 
     return (
         <div className='sub-club-container'>
-            <Navbar />
             {mainBlock}
             {subClubElements}
-            <Footer />
         </div>
     )
 }
