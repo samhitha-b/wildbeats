@@ -90,10 +90,10 @@ const Music = () => {
 
     return (
         <div className='sub-club-container'>
-            {/* <Navbar /> */}
+            <Navbar />
             {mainBlock}
             {subClubElements}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
