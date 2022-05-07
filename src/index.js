@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import Home from './components/MainPage/Landing';
 import Gallery from './components/Gallery/Gallery';
 import Art from './components/Art/Art';
@@ -13,19 +13,19 @@ import Dance from './components/Dance/Dance';
 import Contact from './components/Contact/Contact';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
   <Navbar/>
   <Routes>
-    <Route exact path="/wildbeats" element={<Home/>} />
-    <Route path="/wildbeats/gallery" element={<Gallery/>} />
-    <Route path="/wildbeats/art" element={<Art/>} />
-    <Route path="/wildbeats/music" element={<Music/>} />
-    <Route path="/wildbeats/drama" element={<Drama/>} />
-    <Route path="/wildbeats/dance" element={<Dance/>} />
-    <Route path="/wildbeats/contact" element={<Contact/>} />
+    <Route exact path="/" element={<Home/>} />
+    <Route path="/gallery" element={<Gallery/>} />
+    <Route path="/art" element={<Art/>} />
+    <Route path="/music" element={<Music/>} />
+    <Route path="/drama" element={<Drama/>} />
+    <Route path="/dance" element={<Dance/>} />
+    <Route path="/contact" element={<Contact/>} />
     </Routes>
   <Footer/>
-</BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
