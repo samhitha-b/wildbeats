@@ -27,7 +27,7 @@ body {
   width:100vw;
   height:100vh;
 }
-img{
+.slide-img{
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -37,7 +37,7 @@ img{
 .wrapper{
   position: relative;
 }
-.heading{
+.main-heading{
   position: absolute;
   color:#D38740;
   font-size: 130px;
