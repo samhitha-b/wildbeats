@@ -47,7 +47,7 @@ body {
   transform: translate(-50%,-50%);
 }
 @media screen and (max-width: 795px){
-  .heading{
+  .main-heading{
     font-size: 90px;
     left:50%;
     transform: translate(-50%,-50%);
@@ -55,7 +55,7 @@ body {
 }
 
 @media  screen and (max-width:570px) {
-  .heading{
+  .main-heading{
     font-size: 60px;
   }
 }
