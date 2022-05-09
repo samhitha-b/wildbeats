@@ -83,7 +83,7 @@ html,body {
 }
 
 #image-1 {
-  background-image: url("Assets/d1.JPG");  
+  background-image: url("../../assets/Gallery/d1.JPG");  
   background-position:center 90%;
   background-repeat:no-repeat;
   background-size: cover;
@@ -91,7 +91,7 @@ html,body {
 }
 
 #image-2 {
-  background-image: url("Assets/d2.jpg");  
+  background-image: url("../../assets/Gallery/d2.jpg");  
   background-position:center;
   background-repeat:no-repeat;
   background-size: cover;
@@ -99,7 +99,7 @@ html,body {
 }
 
 #image-3 {
-  background-image: url("Assets/d3.JPG");
+  background-image: url("../../assets/Gallery/d3.JPG");
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
@@ -107,7 +107,7 @@ html,body {
 }
 
 #image-4 {
-    background-image: url("Assets/d4.jpg");
+    background-image: url("../../assets/Gallery/d4.jpg");
     background-position:top;
     background-repeat:no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@ html,body {
   }
   
 #image-5 {
-    background-image: url("Assets/d5.jpg");
+    background-image: url("../../assets/Gallery/d5.jpg");
     background-position: bottom;
     background-repeat:no-repeat;
     background-size: cover;
@@ -123,7 +123,7 @@ html,body {
 }
 
 #image-6 {
-    background-image: url("Assets/i1.JPG");
+    background-image: url("../../assets/Gallery/i1.JPG");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ html,body {
 }
 
 #image-7 {
-    background-image: url("Assets/i2.JPG");
+    background-image: url("../../assets/Gallery/i2.JPG");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ html,body {
 }
 
 #image-8 {
-    background-image: url("Assets/i3.JPG");
+    background-image: url("../../assets/Gallery/i3.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ html,body {
 }
 
 #image-9 {
-    background-image: url("Assets/i4.JPG");
+    background-image: url("../../assets/Gallery/i4.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@ html,body {
 }
 
 #image-10 {
-    background-image: url("Assets/i5.JPG");
+    background-image: url("../../assets/Gallery/i5.JPG");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,140 +163,140 @@ html,body {
 }
 
 #image-11{
-  background-image: url("Assets/s1.JPG");
+  background-image: url("../../assets/Gallery/s1.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: one;
 }
 #image-12{
-  background-image: url("Assets/s2.JPG");
+  background-image: url("../../assets/Gallery/s2.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: two;
 }
 #image-13{
-  background-image: url("Assets/s3.JPG");
+  background-image: url("../../assets/Gallery/s3.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: three;
 }
 #image-14{
-  background-image: url("Assets/s4.JPG");
+  background-image: url("../../assets/Gallery/s4.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: four;
 }
 #image-15{
-  background-image: url("Assets/s5.JPG");
+  background-image: url("../../assets/Gallery/s5.JPG");
   background-position: center 40%;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: five;
 }
 #image-16{
-  background-image: url("Assets/o1.JPG");
+  background-image: url("../../assets/Gallery/o1.JPG");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: one;
 }
 #image-17{
-  background-image: url("Assets/o2.JPG");
+  background-image: url("../../assets/Gallery/o2.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: two;
 }
 #image-18{
-  background-image: url("Assets/o3.JPG");
+  background-image: url("../../assets/Gallery/o3.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: three;
 }
 #image-19{
-  background-image: url("Assets/o4.JPG");
+  background-image: url("../../assets/Gallery/o4.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: four;
 }
 #image-20{
-  background-image: url("Assets/o5.JPG");
+  background-image: url("../../assets/Gallery/o5.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: five;
 }
 #image-21{
-  background-image: url("Assets/e1.JPG");
+  background-image: url("../../assets/Gallery/e1.JPG");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: one;
 }
 #image-22{
-  background-image: url("Assets/e2.JPG");
+  background-image: url("../../assets/Gallery/e2.JPG");
   background-position: center right 35%;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: two;
 }
 #image-23{
-  background-image: url("Assets/e3.jpeg");
+  background-image: url("../../assets/Gallery/e3.jpeg");
   background-position: 80%;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: three;
 }
 #image-24{
-  background-image: url("Assets/e4.JPG");
+  background-image: url("../../assets/Gallery/e4.JPG");
   background-position: 75%;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: four;
 }
 #image-25{
-  background-image: url("Assets/e5.JPG");
+  background-image: url("../../assets/Gallery/e5.JPG");
   background-position: center ;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: five;
 }
 #image-26{
-  background-image: url("Assets/g1.JPG");
+  background-image: url("../../assets/Gallery/g1.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: one;
 }
 #image-27{
-  background-image: url("Assets/g2.JPG");
+  background-image: url("../../assets/Gallery/g2.JPG");
   background-position: center left;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: two;
 }
 #image-28{
-  background-image: url("Assets/g3.JPG");
+  background-image: url("../../assets/Gallery/g3.JPG");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: three;
 }
 #image-29{
-  background-image: url("Assets/g4.JPG");
+  background-image: url("../../assets/Gallery/g4.JPG");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: four;
 }
 #image-30{
-  background-image: url("Assets/g5.JPG");
+  background-image: url("../../assets/Gallery/g5.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
