@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-upcomming {
+  height: 100vh;
+  /* position: relative; */
+  font-family: "Lexend Deca", sans-serif;
+  background: #f2f3ae;
+}
+.header {
+  height: 15vh;
+  /* background: rgb(117, 117, 117); */
+  background: #FADF80;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header h1 {
+  margin-left: 2rem;
+}
+.content {
+  position: relative;
+  background: #f2f3ae;
+  height: 85vh;
+  margin: 0 1rem;
+}
+.content h1 {
+  position: absolute;
+  width: 100%;
+  /* margin: 0 1rem; */
+  text-align: center;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .timer-container {
+  height: 85vh;
+  background: rgb(211, 211, 211);
+}
+.timer-head {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.timer-head h1 {
+  font-size: 40px;
+}
+.timer-head1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.dash {
+  height: 5px;
+  border-radius: 1rem;
+  width: 40%;
+  background: black;
+  margin: 0 1rem;
+}
+.timer {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 30px;
+}
+.timer1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.digit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.digit-container h3 {
+  font-size: 16px;
+} */
+@media screen and (min-width: 700px) {
+  .timer-head h1 {
+    font-size: 50px;
+  }
+  .dash {
+    margin: 0 2rem;
+  }
+  .timer {
+    font-size: 60px;
+  }
+  .timer1 {
+    gap: 4rem;
+  }
+  .digit-container h3 {
+    font-size: 30px;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+}
