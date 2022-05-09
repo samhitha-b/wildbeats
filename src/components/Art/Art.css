@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layouts */
+
+.art-club-main {
+    position: relative;
+}
+
+.sub-club-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-club-main-image {
+    height: 100vh;
+}
+
+.sub-club-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.art-club-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-text-container {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: min(5vw, 120px);
+}
+
+.sub-club-header {
+    inline-size: min(500px, 80%);
+}
+
+.block-text-wrapper {
+    width: min(700px, 90%);
+}
+
+.sub-club-block-content {
+    margin-top: min(2vh, 15px);
+}
+
+.sub-club-block-image {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* layouts end */
+
+/* Font sizes, colors and friends*/
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+}
+
+.art-club-main {
+    background-color: #2491E8;
+}
+
+.first-half-color {
+    color: white;
+}
+
+.second-half-color {
+    color: white;
+}
+
+.sub-club-title {
+    font-weight: 500;
+}
+
+.sub-club-title-wrapper {
+    font-size: min(18vw, 6rem);
+    padding: min(15vh, 150px) min(1vw, 90px);
+    font-weight: 700;
+    border-radius: 4vw;
+
+    /* Shadows */
+    box-shadow: 2px 1px 4px 2px rgba(0, 0, 0, 0.42);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+
+}
+@media (max-width: 768px) {
+    .sub-club-title-box{
+        background-color: #759B31;
+        padding: min(4vw, 20px) min(6vw, 20px);
+        margin: 0 0;
+        border: 2px #ffffff solid;
+        border-radius: 4vw;
+    }
+    }
+
+
+section.art-club-block {
+    background-color: #84D4FF;
+    color: #000000;
+}
+
+section.art-club-block:nth-of-type(2n) {
+    background-color: #003D87;
+    color: #FFFFFF;
+}
+
+.sub-club-header {
+    font-size: min(2.2rem, 8vw);
+    font-weight: 350;
+}
+
+.sub-club-block-content {
+    font-size: min(1.4rem, 5vw);
+    font-weight: lighter;
+}
+
+/* Font sizes, colors end*/
+
+@media screen and (min-width:768px) {
+
+
+    .art-club-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-club-title {
+        right: 20%;
+    }
+
+    .sub-club-title-wrapper {
+        padding-inline: min(1vw, 10px);
+    }
+
+    .sub-club-main-image {
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    section.art-club-block {
+        flex-direction: row-reverse;
+    }
+
+    section.art-club-block:nth-of-type(2n) {
+        flex-direction: row;
+    }
+
+    .block-text-container {
+        width: 50%;
+    }
+
+    .sub-club-block-image>img {
+        height: 70vh;
+        flex-grow: 1;
+    }
+
+    .sub-club-block-image {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .sub-club-title-wrapper {
+        font-size: min(18vw, 6rem);
+        padding-inline: min(4vw, 90px);
+        font-weight: 700;
+    }
+
+    .block-text-container {
+        width: 65%;
+    }
+
+    .sub-club-block-image {
+        width: 35%;
+    }
+}
+
+/* Adjustments */
+
+.main-image-adjustments {
+    object-position: top;
+}
+
+.art-club-block:nth-of-type(1) .sub-club-block-image .sub-club-image {
+    object-position: -50px 0px;
+}
+
+@media screen and (min-width:400px) {
+    .art-club-block:nth-of-type(1) .sub-club-block-image .sub-club-image {
+        object-position: 0px 0px;
+    }
+}
+
+/* Adjustments end */
+
+
+
+/*elminating glassmorphic effect and decentering the title */
+.sub-club-title-wrapper {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    left: 0;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    display: flex;
+    flex-direction: row;
+    gap: min(3vw, 10px);
+    /*flex-wrap: wrap;
+    justify-content: center; */
+}
+
+@media screen and (min-width:768px) {
+    .art-club-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sub-club-title {
+        width: 30%;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-club-title-wrapper {
+        display: block;
+    }
+}
