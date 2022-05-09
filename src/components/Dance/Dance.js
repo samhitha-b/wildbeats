@@ -24,7 +24,7 @@ const Dance = () => {
     const splitColors = word => {
         const halfLength = word.length / 2;
         return (
-            <div className='sub-club-title-box'>
+            <div className='dance-club-title-box'>
             <article className='sub-club-title-wrapper'>
                 <div className='first-half-color'>
                     {word.slice(0, halfLength)}
@@ -51,26 +51,26 @@ const Dance = () => {
 
     // Can add sections below just by creating an object inside the subClub array literal(template has been given as a comment inside the array)
     const subClub = [
-        {
-            header: 'Capturing the beauty in each step',
-            content: 'We aim to liven every stage we step on.  Express the hidden language of your soul through every performance.',
-            img: FirstSectionImage
-        },
-        {
-            header: '',
-            content: '',
-            img: SecondSectionImage
-        },
-        {
-            header: 'Give yourself up to music',
-            content: 'Set your spirit free with our performances. Let your feet capture each moment in its entirety. Join hands to enjoy exciting events and deliver a performance of a life time!',
-            img: ThirdSectionImage
-        }
-        // {
-        //     header:'',
-        //     content:'',
-        //     img:''
-        // }...
+      {
+          header: 'Capturing the beauty in each step',
+          content: 'We aim to liven every stage we step on.  Express the hidden language of your soul through every performance.',
+          img: FirstSectionImage
+      },
+      {
+          header: '',
+          content: '',
+          img: SecondSectionImage
+      },
+      {
+          header: 'Give yourself up to music',
+          content: 'Set your spirit free with our performances. Let your feet capture each moment in its entirety. Join hands to enjoy exciting events and deliver a performance of a life time!',
+          img: ThirdSectionImage
+      }
+      // {
+      //     header:'',
+      //     content:'',
+      //     img:''
+      // }...
     ]
 
     const subClubElements = subClub.map((block, index) => (
