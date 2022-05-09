@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './gallery.css';
 
-function Welcome(){
+function Heading(){
   return (
-    <div className="landing">
-        <div className="gallery-home">
-            <h1>Gallery</h1>
-        </div>
+    <div className="gallery-heading">
+        <h1>Gallery</h1>
     </div>
   )
 }
@@ -16,18 +13,52 @@ function PhotoCollage(){
   return (
     <div className="photos">
         <div className="event">
-            <div className="image spans-cols-2" id="image-1"><h3 className="caption">Diwali '19</h3></div>
-            <div className="image spans-rows-2" id="image-2"><h3 className="caption">Onam '19</h3></div>
-            <div className="image spans-rows-2" id="image-3"><h3 className="caption">Republic Day '19</h3></div>
-            <div className="image" id="image-4"><h3 className="caption">Independence Day '19</h3></div>
-            <div className="image spans-cols-2" id="image-5"><h3 className="caption">Sankranti '20</h3></div>
+            <span className="event-name">Diwali</span>
+            <div className="image spans-cols-2" id="image-1"></div>
+            <div className="image spans-rows-2" id="image-2"></div>
+            <div className="image spans-rows-2" id="image-3"></div>
+            <div className="image" id="image-4"></div>
+            <div className="image spans-cols-2" id="image-5"></div>
         </div>
         <div className="event">
-            <div className="image spans-cols-2" id="image-6"><h3 className="caption">Independence Day '18</h3></div>
-            <div className="image spans-rows-2" id="image-7"><h3 className="caption">Republic Day '18</h3></div>
-            <div className="image spans-rows-2" id="image-8"><h3 className="caption">ENLACE '18</h3></div>
-            <div className="image" id="image-9"><h3 className="caption">Ek Bharat Shreshtha Bharat</h3></div>
-            <div className="image spans-cols-2" id="image-10"><h3 className="caption">Traditional Day '18</h3></div>
+          <span className="event-name">Independence day</span>
+            <div className="image spans-cols-2" id="image-6"></div>
+            <div className="image spans-rows-2" id="image-7"></div>
+            <div className="image spans-rows-2" id="image-8"></div>
+            <div className="image" id="image-9"></div>
+            <div className="image spans-cols-2" id="image-10"></div>
+        </div>
+        <div className="event">
+            <span className="event-name">Sankranti</span>
+            <div className="image spans-cols-2" id="image-11"></div>
+            <div className="image spans-rows-2" id="image-12"></div>
+            <div className="image spans-rows-2" id="image-13"></div>
+            <div className="image" id="image-14"></div>
+            <div className="image spans-cols-2" id="image-15"></div>
+        </div>
+        <div className="event">
+            <span className="event-name">Onam</span>
+            <div className="image spans-cols-2" id="image-16"></div>
+            <div className="image spans-rows-2" id="image-17"></div>
+            <div className="image spans-rows-2" id="image-18"></div>
+            <div className="image" id="image-19"></div>
+            <div className="image spans-cols-2" id="image-20"></div>
+        </div>
+        <div className="event">
+            <span className="event-name">Enlace</span>
+            <div className="image spans-cols-2" id="image-21"></div>
+            <div className="image spans-rows-2" id="image-22"></div>
+            <div className="image spans-rows-2" id="image-23"></div>
+            <div className="image" id="image-24"></div>
+            <div className="image spans-cols-2" id="image-25"></div>
+        </div>
+        <div className="event">
+            <span className="event-name">Ganesh Chathurti</span>
+            <div className="image spans-cols-2" id="image-26"></div>
+            <div className="image spans-rows-2" id="image-27"></div>
+            <div className="image spans-rows-2" id="image-28"></div>
+            <div className="image" id="image-29"></div>
+            <div className="image spans-cols-2" id="image-30"></div>
         </div>
     </div>
   )
@@ -36,10 +67,10 @@ function PhotoCollage(){
 function Gallery(){
   return (
     <>
-      <Welcome />
+      <Heading />
       <PhotoCollage />
     </>
   )
 }
 
-export default Gallery;
+export default Gallery
