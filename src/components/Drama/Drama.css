@@ -16,11 +16,11 @@ body {
 
 /* Layouts */
 
-.sub-club-main {
+.dram-sub-club-main {
     position: relative;
 }
 
-.sub-club-title {
+.drama-sub-club-title {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -30,11 +30,11 @@ body {
 }
 
 
-.sub-club-main-image {
+.drama-sub-club-main-image {
     height: 100vh;
 }
 
-.sub-club-image {
+.drama-sub-club-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -42,7 +42,7 @@ body {
     overflow: hidden;
 }
 
-.sub-club-block {
+.drama-sub-club-block {
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +56,7 @@ body {
     padding: min(5vw, 120px);
 }
 
-.sub-club-header {
+.drama-sub-club-header {
     inline-size: min(500px, 80%);
 }
 
@@ -64,11 +64,11 @@ body {
     width: min(700px, 90%);
 }
 
-.sub-club-block-content {
+.drama-sub-club-block-content {
     margin-top: min(2vh, 15px);
 }
 
-.sub-club-block-image {
+.drama-sub-club-block-image {
     overflow: hidden;
     height: 100vh;
 }
@@ -89,7 +89,7 @@ body {
     background-color: aliceblue;
 }
 
-.sub-club-main {
+.drama-sub-club-main {
     background-color: #aa3030;
 }
 
@@ -101,11 +101,11 @@ body {
     color: white;
 }
 
-.sub-club-title {
+.drama-sub-club-title {
     font-weight: 500;
 }
 
-.sub-club-title-wrapper {
+.drama-sub-club-title-wrapper {
     font-size: min(15vw, 5rem);
     padding: min(15vh, 150px) min(1vw, 90px);
     font-weight: 700;
@@ -129,22 +129,22 @@ body {
     }
     }
 
-section.sub-club-block {
+section.drama-sub-club-block {
     background-color: #ff9683;
     color: #000000;
 }
 
-section.sub-club-block:nth-of-type(2n) {
+section.drama-sub-club-block:nth-of-type(2n) {
     background-color: #cf514c;
     color: #FFFFFF;
 }
 
-.sub-club-header {
+.drama-sub-club-header {
     font-size: min(2.2rem, 8vw);
     font-weight: 350;
 }
 
-.sub-club-block-content {
+.drama-sub-club-block-content {
     font-size: min(1.4rem, 5vw);
     font-weight: lighter;
 }
@@ -154,29 +154,29 @@ section.sub-club-block:nth-of-type(2n) {
 @media screen and (min-width:768px) {
 
 
-    .sub-club-main {
+    .drama-sub-club-main {
         display: flex;
         flex-direction: column;
     }
 
-    .sub-club-title {
+    .drama-sub-club-title {
         right: 20%;
     }
 
-    .sub-club-title-wrapper {
+    .drama-sub-club-title-wrapper {
         padding-inline: min(1vw, 10px);
     }
 
-    .sub-club-main-image {
+    .drama-sub-club-main-image {
         width: 70%;
         align-self: flex-end;
     }
 
-    section.sub-club-block {
+    section.drama-sub-club-block {
         flex-direction: row-reverse;
     }
 
-    section.sub-club-block:nth-of-type(2n) {
+    section.drama-sub-club-block:nth-of-type(2n) {
         flex-direction: row;
     }
 
@@ -184,12 +184,12 @@ section.sub-club-block:nth-of-type(2n) {
         width: 50%;
     }
 
-    .sub-club-block-image>img {
+    .drama-sub-club-block-image>img {
         height: 70vh;
         flex-grow: 1;
     }
 
-    .sub-club-block-image {
+    .drama-sub-club-block-image {
         display: flex;
         flex-direction: column;
         height: auto;
@@ -198,7 +198,7 @@ section.sub-club-block:nth-of-type(2n) {
 }
 
 @media screen and (min-width:1200px) {
-    .sub-club-title-wrapper {
+    .drama-sub-club-title-wrapper {
         font-size: min(18vw, 6rem);
         padding-inline: min(4vw, 90px);
         font-weight: 700;
@@ -208,7 +208,7 @@ section.sub-club-block:nth-of-type(2n) {
         width: 65%;
     }
 
-    .sub-club-block-image {
+    .drama-sub-club-block-image {
         width: 35%;
     }
 }
@@ -219,12 +219,12 @@ section.sub-club-block:nth-of-type(2n) {
     object-position: top;
 }
 
-.sub-club-block:nth-of-type(1) .sub-club-block-image .sub-club-image {
+.drama-sub-club-block:nth-of-type(1) .drama-sub-club-block-image .drama-sub-club-image {
     object-position: -50px 0px;
 }
 
 @media screen and (min-width:400px) {
-    .sub-club-block:nth-of-type(1) .sub-club-block-image .sub-club-image {
+    .drama-sub-club-block:nth-of-type(1) .drama-sub-club-block-image .drama-sub-club-image {
         object-position: 0px 0px;
     }
 }
@@ -234,7 +234,7 @@ section.sub-club-block:nth-of-type(2n) {
 
 
 /*elminating glassmorphic effect and decentering the title */
-.sub-club-title-wrapper {
+.drama-sub-club-title-wrapper {
     padding: 0;
     box-shadow: none;
     background: none;
@@ -249,13 +249,13 @@ section.sub-club-block:nth-of-type(2n) {
 }
 
 @media screen and (min-width:768px) {
-    .sub-club-main {
+    .drama-sub-club-main {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    .sub-club-title {
+    .drama-sub-club-title {
         width: 30%;
         position: static;
         display: flex;
@@ -264,7 +264,7 @@ section.sub-club-block:nth-of-type(2n) {
         align-items: center;
     }
 
-    .sub-club-title-wrapper {
+    .drama-sub-club-title-wrapper {
         display: block;
     }
 }
