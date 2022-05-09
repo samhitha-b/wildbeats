@@ -119,12 +119,11 @@ body {
 
 }
 @media (max-width: 768px) {
-    .sub-club-title-box{
-        background-color: #759B31;
-        padding: min(4vw, 20px) min(6vw, 20px);
-        margin: 0 0;
-        border: 2px #ffffff solid;
-        border-radius: 4vw;
+
+    .art-club-title-box {
+        background-color: #2491E8;
+        margin: 0;
+        padding: min(4vw,20px) min(8vw,25px);
     }
     }
 
