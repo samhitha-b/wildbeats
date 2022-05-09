@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/wildbeats/static/css/main.89186f80.css",
-    "main.js": "/wildbeats/static/js/main.5871e4a4.js",
-    "static/media/Main.png": "/wildbeats/static/media/Main.a769e19b7b15be438f82.png",
+    "main.css": "/wildbeats/static/css/main.21287254.css",
+    "main.js": "/wildbeats/static/js/main.aa1a7617.js",
+    "static/media/Main.png": "/wildbeats/static/media/Main.050b7ad5e3ccca60d8ae.png",
     "static/media/im2.jpg": "/wildbeats/static/media/im2.9d139f89356994edd302.jpg",
-    "static/media/Section-3.png": "/wildbeats/static/media/Section-3.f2b2f1f689adb0da30f0.png",
+    "static/media/Section-2.png": "/wildbeats/static/media/Section-2.798dd446619254adb08c.png",
+    "static/media/Section-1.png": "/wildbeats/static/media/Section-1.d7ae9b477a00ed84ee3e.png",
+    "static/media/Section-3.png": "/wildbeats/static/media/Section-3.5792f21d0e4038e4ff82.png",
     "static/media/im7.jpg": "/wildbeats/static/media/im7.5844b90aa14575e3a6e1.jpg",
     "static/media/im6.jpg": "/wildbeats/static/media/im6.c209916f3545b1c7a661.jpg",
     "static/media/im4.jpg": "/wildbeats/static/media/im4.f4405edd5c6d65013053.jpg",
-    "static/media/Section-2.png": "/wildbeats/static/media/Section-2.798dd446619254adb08c.png",
-    "static/media/Section-1.png": "/wildbeats/static/media/Section-1.d7ae9b477a00ed84ee3e.png",
     "static/media/im1.jpg": "/wildbeats/static/media/im1.c6d4bb55078a6a09958a.jpg",
     "static/media/im3.jpg": "/wildbeats/static/media/im3.7c88f4f3f8d327ec143a.jpg",
     "static/media/slick.svg": "/wildbeats/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -17,11 +17,11 @@
     "static/media/slick.ttf": "/wildbeats/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/wildbeats/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wildbeats/index.html",
-    "main.89186f80.css.map": "/wildbeats/static/css/main.89186f80.css.map",
-    "main.5871e4a4.js.map": "/wildbeats/static/js/main.5871e4a4.js.map"
+    "main.21287254.css.map": "/wildbeats/static/css/main.21287254.css.map",
+    "main.aa1a7617.js.map": "/wildbeats/static/js/main.aa1a7617.js.map"
   },
   "entrypoints": [
-    "static/css/main.89186f80.css",
-    "static/js/main.5871e4a4.js"
+    "static/css/main.21287254.css",
+    "static/js/main.aa1a7617.js"
   ]
 }
