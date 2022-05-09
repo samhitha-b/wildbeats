@@ -29,6 +29,7 @@ body {
     align-items: center;
 }
 
+
 .sub-club-main-image {
     height: 100vh;
 }
@@ -105,7 +106,7 @@ body {
 }
 
 .sub-club-title-wrapper {
-    font-size: min(18vw, 6rem);
+    font-size: min(15vw, 5rem);
     padding: min(15vh, 150px) min(1vw, 90px);
     font-weight: 700;
     border-radius: 4vw;
@@ -118,6 +119,16 @@ body {
     backdrop-filter: blur(10px);
 
 }
+
+@media (max-width: 768px) {
+    .sub-club-title-box{
+        background-color: #759B31;
+        padding: min(4vw, 20px) min(6vw, 20px);
+        margin: 0 0;
+        border: 2px #ffffff solid;
+        border-radius: 4vw;
+    }
+    }
 
 section.sub-club-block {
     background-color: #D6FC8D;

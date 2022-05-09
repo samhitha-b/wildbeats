@@ -24,6 +24,7 @@ const Music = () => {
     const splitColors = word => {
         const halfLength = word.length / 2;
         return (
+            <div className='sub-club-title-box'>
             <article className='sub-club-title-wrapper'>
                 <div className='first-half-color'>
                     {word.slice(0, halfLength)}
@@ -32,6 +33,7 @@ const Music = () => {
                     {word.slice(halfLength)}
                 </div>
             </article>
+            </div>
         )
     }
 
