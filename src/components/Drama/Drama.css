@@ -3,17 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
-html {
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
 /* Layouts */
 
 .drama-sub-club-main {
@@ -121,7 +110,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .sub-club-title-box{
+    .drama-sub-club-title-box{
         background-color: #aa3030;
         padding: min(4vw, 20px) min(6vw, 20px);
         margin: 0 0;
