@@ -5,11 +5,12 @@
 }
 
 .newbody {
-  width: 50%;
+  max-width: 1000px;
   display: flex;
+  margin: 2%;
+  margin-top: 0;
+  margin-bottom: 0%;
   flex-direction: column;
-  margin-left: 25%;
-  margin-right: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
   background-color: #FCF0CC;
@@ -18,12 +19,12 @@
   background-color: #b998dc;
 }
 .bg {
-  padding-top: 10%;
-  padding-bottom: 3%;
-}
-
-.newbody-members {
-  padding: 4%;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  max-width: max-content;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpapers.co%2Fvy79-circle-purple-simple-minimal-pattern-background%2F&psig=AOvVaw1p_SPObVl3hOuQnYnyeXBB&ust=1652262256314000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDTotzS1PcCFQAAAAAdAAAAABAD");
 }
 
 .newbody-header {
@@ -39,6 +40,9 @@
   margin-top: 0;
 }
 
+.newbody-members{
+  padding:2%;
+}
 
 /*  Header  */
 .beats {
@@ -56,19 +60,9 @@
 
 /*  Timeline  */
 .container {
-  min-height: 70vh;
-  width: 70%;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: #b998dc;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-left: 15%;
-  /* margin: 0 auto; */
-  /* margin: 0 !important; */
-  /* margin-left: 0 !important;
-  margin-right: 0 !important; */
 }
 
 .Collapsible {
@@ -113,8 +107,8 @@
 }
 
 .timeline ul li {
-  padding: 20px;
-  margin-bottom: 20px;
+  /* padding: 20px; */
+  margin-bottom: 2%;
 }
 
 .timeline ul li:last-child {
@@ -127,74 +121,10 @@
   /* border-radius: 20px; */
   background-color: #311451;
   color: #FFFFFF;
-  /* padding: 2%; */
   /* font-size: 140%; */
   /* width: 40%; */
 }
 
-@media only screen and (min-width: 768px) {
-  .timeline::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 4px;
-    background-color: #FCF0CC;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .timeline ul li {
-    width: 50%;
-    margin-bottom: 30px;
-    position: relative;
-  }
-
-  .timeline ul li:nth-child(odd) {
-    float: right;
-    clear: left;
-    transform: translateX(7px);
-  }
-
-  .timeline ul li:nth-child(even) {
-    float: left;
-    clear: right;
-    transform: translateX(-4px);
-  }
-
-  .timeline ul li::after {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 20px;
-    background-color: #FCF0CC;
-    border-radius: 50%;
-    top: 0;
-  }
-
-  .timeline ul li:nth-child(odd)::after {
-    transform: translate(50%, -50%);
-    left: -27px;
-  }
-
-  .timeline ul li:nth-child(even)::after {
-    transform: translate(50%, -50%);
-    right: -4px;
-  }
-
-  .timeline ul li:hover:after {
-    background-color: #311451;
-  }
-
-}
-
-@media only screen and (max-width:1730px) {
-  .newbody {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-}
 
 .new-contact {
   background-color: #311451;
@@ -217,11 +147,6 @@
   width: 20%;
 }
 
-.faculty {
-  margin-bottom: 1%;
-  text-align: center;
-
-}
 
 .faculty>h1 {
   font-size: 3rem
@@ -304,18 +229,6 @@ h4 {
 
 
 /*  Lead Styling */
-.lead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #FCF0CC;
-}
-
-.lead1 div img {
-  margin-top: 2%;
-}
 
 .lead1 div h1 {
   font-size: 32px;
@@ -346,13 +259,8 @@ h4 {
   display: grid;
   /* flex-wrap: wrap; */
   /* gap: 2%; */
-  column-gap: 20%;
-  row-gap: 0.5%;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 3%;
 }
 
 .lead1>div {
@@ -491,149 +399,3 @@ h4 {
 }
 
 /* media query  */
-@media screen and (max-width: 990px) {
-  .year {
-    justify-content: center;
-    margin-top: 2%;
-  }
-
-  .faculty-img {
-    width: 50%;
-  }
-
-  .faculty h1 {
-    font-size: 1.7rem
-  }
-
-  .faculty h4 {
-    font-size: 1.4rem
-  }
-
-  .mentor-newbody h1 {
-    font-size: 1.5rem;
-  }
-
-  .mentor-newbody h4 {
-    font-size: 1.2rem;
-  }
-
-  .mentor-newbody img {
-    min-width: 110px;
-  }
-
-  .mentor-img {
-    width: 70%;
-  }
-
-
-  .lead1 {
-    /* flex-direction: column; */
-    /* width: 50%; */
-    grid-template-columns: 1fr 1fr;
-    /* gap: 1%; */
-  }
-
-  .lead1>div:last-child {
-    grid-column: auto;
-  }
-
-  .lead1 div h1 {
-    font-size: 1.4rem;
-  }
-
-  .lead1 div h4 {
-    font-size: 1.2rem;
-  }
-
-  .mentor div h1 {
-    font-size: 1.4rem;
-  }
-
-  .mentor div h4 {
-    font-size: 1.2rem;
-  }
-
-  .lead1-19 div h1 {
-    font-size: 1.4rem;
-  }
-
-  .lead1-19 div h4 {
-    font-size: 1.2rem;
-  }
-
-  .mentor div {
-    /* flex-direction: column; */
-    width: 50%;
-  }
-
-  h4 {
-    font-size: 0.4rem;
-  }
-
-  .name {
-    font-size: 0.4rem;
-  }
-  
-
-  .leadimg {
-    width: 60%;
-  }
-
-  .leadimg-last {
-    width: 90%;
-    justify-content: center;
-  }
-
-  .mag-button {
-    font-size: 1.5rem;
-    padding: 1rem 3.3rem;
-    width: auto;
-    margin-top: 1%;
-    margin-bottom: 2%;
-  }
-
-  .contact-button {
-    font-size: 1.5rem;
-    padding: 1rem 4rem;
-    width: auto;
-    margin-top: 1%;
-    margin-bottom: 2%;
-  }
-
-  .new-contact {
-    flex-direction: column;
-  }
-
-  .timeline {
-    width: 100%;
-  }
-
-  .timeline ul li{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .container{
-    margin-left: 8%;
-  }
-}
-
-@media screen and (max-width: 1300px){
-  .container{
-    width: 80%;
-    margin-left: 10%;
-  }
-  .mentor div h1 {
-    font-size: 1.6rem;
-  }
-
-  .mentor div h4 {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .leadimg-last {
-    width: 60%;
-  }
-}

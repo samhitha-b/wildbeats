@@ -15,7 +15,8 @@ export default function Timeline(){
                             <Collapsible 
                                 trigger="2020-21" 
                                 className="timeline-content" 
-                                open = {timeHover === 1 ? true : false}
+                                // open = {timeHover === 1 ? true : false}
+                                open = {false}
                             >
                                 <div className="mentor">
                                     <div>
@@ -38,7 +39,8 @@ export default function Timeline(){
                             <Collapsible 
                                 trigger="2019-20"
                                 className="timeline-content"
-                                open = {timeHover === 2 ? true : false}
+                                // open = {timeHover === 2 ? true : false}
+                                open = {false}
                             >
                                 
                                 <div className="mentor">
@@ -98,7 +100,8 @@ export default function Timeline(){
                             <Collapsible 
                                 trigger="2018-19" 
                                 className="timeline-content"
-                                open = {timeHover === 3 ? true : false}
+                                // open = {timeHover === 3 ? true : false}
+                                open = {false}
                             >
                                 <div className="mentor">
                                     <div>
@@ -120,7 +123,8 @@ export default function Timeline(){
                             <Collapsible 
                                 trigger="2017-18"
                                 className="timeline-content"
-                                open = {timeHover === 4 ? true : false}
+                                // open = {timeHover === 4 ? true : false}
+                                open = {false}
                             >
                                 <div className="mentor">
                                     <div>
