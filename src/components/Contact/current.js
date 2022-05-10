@@ -6,21 +6,9 @@ import Timeline from "./timeline";
 
 
 export default function NewBody(){
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        pauseOnHover: false,
-        adaptiveHeight: true,
-    
-      };
     return(
         <div className="bg">
             <div className="con-slider-container">
-                <Slider {...settings}>
-                    {/* 1 */}
                     <div className="con-slide newbody">
                     <div className="real-container">
                         <div>
@@ -106,137 +94,8 @@ export default function NewBody(){
                         </div>
                     </div>
                     </div>
-
-                    {/* 2 */}
-                    <div className="con-slide newbody">
-                        <div className="real-container-20">
-                            <div>
-                                <h1 className="newbody-header">Year 2020-21</h1>
-                            </div>
-
-                            <div className="newbody-members">                            
-                                <div className="lead1-20">
-                                    <div className="memb">
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Bivek Paul</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877736/Wildbeats-ppl/rahul_u0w4eq.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Rahul Nayak B.V</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        
-                        
-                        </div>
-                    </div>
-                    {/* 3 */}
-                    <div className="con-slide newbody">
-                        <div className="real-container-20">
-                            <div>
-                                <h1 className="newbody-header">Year 2019-20</h1>
-                            </div>
-
-                            <div className="newbody-members">                            
-                                <div className="lead1-19">
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877600/Wildbeats-ppl/Keerthi_kftxcp.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Keerthi Sreenivas</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877721/Wildbeats-ppl/Mekala_qpb2yn.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Mekala Bhargav</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877546/Wildbeats-ppl/deepesh_lfcyvk.png" className="leadimg" alt=""/>
-                                        <h1 className="name">Deepesh Sharma</h1>
-                                        <h4>Lead</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877547/Wildbeats-ppl/sangeetha_dz2rhj.png" className="leadimg" alt=""/>
-                                        <h1 className="name">Sangeetha Suresh</h1>
-                                        <h4>Lead</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="leadimg" alt=""/>
-                                        <h1 className="name">Bivel Paul</h1>
-                                        <h4>Lead</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877580/Wildbeats-ppl/anurag_rxmeuz.png" className="leadimg" alt=""/>
-                                        <h1 className="name">Anurag Reddy</h1>
-                                        <h4>Lead</h4>
-                                    </div>
-
-                                    <div className="memb span-2">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877544/Wildbeats-ppl/tumun_qi6gwq.png" className="leadimg" alt=""/>
-                                        <h1 className="name">Tumun Shaily</h1>
-                                        <h4>Lead</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* 4 */}
-                    <div className="con-slide newbody">
-                        <div className="real-container-20">
-                            <div>
-                                <h1 className="newbody-header">Year 2018-19</h1>
-                            </div>
-
-                            <div className="newbody-members">                            
-                                <div className="lead1-20">
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877544/Wildbeats-ppl/sai_dnbthd.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Sai Surya Kiran</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877547/Wildbeats-ppl/sandeep_da7tes.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Sandeep Kumar</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        
-                        
-                        </div>
-                    </div>
-                    {/* 5 */}
-                    <div className="con-slide newbody">
-                        <div className="real-container-20">
-                            <div>
-                                <h1 className="newbody-header">Year 2017-18</h1>
-                            </div>
-
-                            <div className="newbody-members">                            
-                                <div className="lead1-20">
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877543/Wildbeats-ppl/pushpak_bq9zjx.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Pushpak Raj</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                    <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877551/Wildbeats-ppl/srija_b7gbcq.png" className="mentor-img" alt=""/>
-                                        <h1 className="name">Srija Munjuluri</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        
-                        
-                        </div>
-                    </div>
-                </Slider>
             </div>
+            <Timeline />
          </div>
     )
 }

@@ -16,7 +16,7 @@ export default function Timeline(){
                                 trigger="2020-21" 
                                 className="timeline-content" 
                                 // open = {timeHover === 1 ? true : false}
-                                open = {true}
+                                open = {false}
                             >
                                 <div className="mentor">
                                     <div>
@@ -40,7 +40,7 @@ export default function Timeline(){
                                 trigger="2019-20"
                                 className="timeline-content"
                                 // open = {timeHover === 2 ? true : false}
-                                open = {true}
+                                open = {false}
                             >
                                 
                                 <div className="mentor">

@@ -92,9 +92,11 @@
 
 /*  Timeline  */
 .container {
+  padding-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color: #b998dc;
 }
 
@@ -129,7 +131,7 @@
 .timeline {
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 1000px;
   position: relative;
 }
 
@@ -154,7 +156,7 @@
   background-color: #311451;
   color: #FFFFFF;
   /* font-size: 140%; */
-  /* width: 40%; */
+  /* width: 120%; */
 }
 
 
