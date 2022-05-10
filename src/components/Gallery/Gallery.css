@@ -302,7 +302,7 @@
     gap: 7px;  
   }
 .event-name{
-  line-height: 10vw;
+  line-height: 8vw;
 }
 
   #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
@@ -329,6 +329,10 @@
 
   .event-name{
     line-height: 10vw;
+  }
+
+  .galley-event-name-big{
+    grid-template-rows: 23vw repeat(3,27vw);
   }
 
   #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
