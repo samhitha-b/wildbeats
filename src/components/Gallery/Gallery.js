@@ -4,7 +4,7 @@ import './Gallery.css';
 function Heading(){
   return (
     <div className="gallery-heading">
-        <h1>Gallery</h1>
+        <h1>GALLERY</h1>
     </div>
   )
 }
