@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layouts */
+
+.drama-sub-club-main {
+    position: relative;
+}
+
+.drama-sub-club-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.drama-sub-club-main-image {
+    height: 100vh;
+}
+
+.drama-sub-club-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.drama-sub-club-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-text-container {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: min(5vw, 120px);
+}
+
+.drama-sub-club-header {
+    inline-size: min(500px, 80%);
+}
+
+.block-text-wrapper {
+    width: min(700px, 90%);
+}
+
+.drama-sub-club-block-content {
+    margin-top: min(2vh, 15px);
+}
+
+.drama-sub-club-block-image {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* layouts end */
+
+/* Font sizes, colors and friends*/
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+}
+
+.drama-sub-club-main {
+    background-color: #aa3030;
+}
+
+.first-half-color {
+    color: white;
+}
+
+.second-half-color {
+    color: white;
+}
+
+.drama-sub-club-title {
+    font-weight: 500;
+}
+
+.drama-sub-club-title-wrapper {
+    font-size: min(15vw, 5rem);
+    padding: min(15vh, 150px) min(1vw, 90px);
+    font-weight: 700;
+    border-radius: 4vw;
+
+    /* Shadows */
+    box-shadow: 2px 1px 4px 2px rgba(0, 0, 0, 0.42);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+
+}
+
+@media (max-width: 768px) {
+    .sub-club-title-box{
+        background-color: #aa3030;
+        padding: min(4vw, 20px) min(6vw, 20px);
+        margin: 0 0;
+
+    }
+    }
+
+section.drama-sub-club-block {
+    background-color: #ff9683;
+    color: #000000;
+}
+
+section.drama-sub-club-block:nth-of-type(2n) {
+    background-color: #cf514c;
+    color: #FFFFFF;
+}
+
+.drama-sub-club-header {
+    font-size: min(2.2rem, 8vw);
+    font-weight: 350;
+}
+
+.drama-sub-club-block-content {
+    font-size: min(1.4rem, 5vw);
+    font-weight: lighter;
+}
+
+/* Font sizes, colors end*/
+
+@media screen and (min-width:768px) {
+
+
+    .drama-sub-club-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drama-sub-club-title {
+        right: 20%;
+    }
+
+    .drama-sub-club-title-wrapper {
+        padding-inline: min(1vw, 10px);
+    }
+
+    .drama-sub-club-main-image {
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    section.drama-sub-club-block {
+        flex-direction: row-reverse;
+    }
+
+    section.drama-sub-club-block:nth-of-type(2n) {
+        flex-direction: row;
+    }
+
+    .block-text-container {
+        width: 50%;
+    }
+
+    .drama-sub-club-block-image>img {
+        height: 70vh;
+        flex-grow: 1;
+    }
+
+    .drama-sub-club-block-image {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .drama-sub-club-title-wrapper {
+        font-size: min(18vw, 6rem);
+        padding-inline: min(4vw, 90px);
+        font-weight: 700;
+    }
+
+    .block-text-container {
+        width: 65%;
+    }
+
+    .drama-sub-club-block-image {
+        width: 35%;
+    }
+}
+
+/* Adjustments */
+
+.main-image-adjustments {
+    object-position: top;
+}
+
+.drama-sub-club-block:nth-of-type(1) .drama-sub-club-block-image .drama-sub-club-image {
+    object-position: -50px 0px;
+}
+
+@media screen and (min-width:400px) {
+    .drama-sub-club-block:nth-of-type(1) .drama-sub-club-block-image .drama-sub-club-image {
+        object-position: 0px 0px;
+    }
+}
+
+/* Adjustments end */
+
+
+
+/*elminating glassmorphic effect and decentering the title */
+.drama-sub-club-title-wrapper {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    left: 0;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    display: flex;
+    flex-direction: row;
+    gap: min(3vw, 10px);
+    /*flex-wrap: wrap;
+    justify-content: center; */
+}
+
+@media screen and (min-width:768px) {
+    .drama-sub-club-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .drama-sub-club-title {
+        width: 30%;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drama-sub-club-title-wrapper {
+        display: block;
+    }
+}
