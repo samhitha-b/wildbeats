@@ -23,17 +23,17 @@
 }
 
 .event {
-    max-width: 85vw;
+    max-width: 70vw;
     background-color: #fbad3c;
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 50px;
     margin-inline: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(3,25vw);
-    grid-template-rows: 8vw repeat(3,25vw);
+    grid-template-columns: repeat(3,21vw);
+    grid-template-rows: 8vw repeat(3,21vw);
     grid-template-areas:
         "title title title"
         "one one two"
@@ -43,13 +43,6 @@
     gap: 10px;
 }
 
-@media (max-width: 768px) {
-  .event {
-    max-width: 95vw;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-}
 .event>.image{
   position: relative;
   width: 100%;
@@ -68,6 +61,69 @@
   padding: 1vw;
 }
 
+/* Responsiveness */
+
+@media (max-width:850px) {
+  .event {
+    max-width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .event {
+    grid-template-columns: repeat(3,23vw);
+    grid-template-rows: 10vw repeat(3,23vw);
+    grid-template-areas: "title title title"
+                         "one one two"
+                         "one one two"
+                         "three four four";
+    gap: 7px;  
+  }
+.event-name{
+  line-height: 8vw;
+}
+
+  #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
+    display:none;
+  }
+}
+
+@media (max-width:639px) {
+  .galley-event-name-big{
+    grid-template-rows: 20vw repeat(3,27vw);
+  }
+}
+@media (max-width:450px) {
+  .event {
+    max-width: 90vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .event {
+    padding: 12px;
+    grid-template-columns: 46vw 36vw;
+    grid-template-rows: max(6vw, 60px) 36vw 36vw 36vw;
+    grid-template-areas: "title title"
+                         "one two"
+                         "three two"
+                         "four four";
+    gap: 5px;
+  }
+
+  .event-name{
+    line-height: 10vw;
+  }
+
+  .galley-event-name-big{
+    grid-template-rows: 23vw repeat(3,27vw);
+  }
+
+  #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
+    display:none;
+  }
+}
+
+/* Images  */
 #image-1 {
   background-image: url("../../assets/Gallery/d1.JPG");  
   background-position:center 90%;
@@ -288,58 +344,6 @@
   background-repeat: no-repeat;
   grid-area: five;
 }
-
-/* Responsiveness */
-
-@media (max-width:850px) {
-  .event {
-    grid-template-columns: repeat(3,27vw);
-    grid-template-rows: 10vw repeat(3,27vw);
-    grid-template-areas: "title title title"
-                         "one one two"
-                         "one one two"
-                         "three four four";
-    gap: 7px;  
-  }
-.event-name{
-  line-height: 8vw;
-}
-
-  #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
-    display:none;
-  }
-}
-
-@media (max-width:639px) {
-  .galley-event-name-big{
-    grid-template-rows: 20vw repeat(3,27vw);
-  }
-}
-@media (max-width:450px) {
-  .event {
-    padding: 12px;
-    grid-template-columns: 46vw 36vw;
-    grid-template-rows: max(6vw, 60px) 36vw 36vw 36vw;
-    grid-template-areas: "title title"
-                         "one two"
-                         "three two"
-                         "four four";
-    gap: 5px;
-  }
-
-  .event-name{
-    line-height: 10vw;
-  }
-
-  .galley-event-name-big{
-    grid-template-rows: 23vw repeat(3,27vw);
-  }
-
-  #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
-    display:none;
-  }
-}
-
 
 /* Custom Scrollbar already being used commonly for the site */
 /* ::-webkit-scrollbar {
