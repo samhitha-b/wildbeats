@@ -4,29 +4,64 @@
   box-sizing: border-box;
 }
 
-.newbody {
+.real-container{
   max-width: 1000px;
-  display: flex;
-  margin: 2%;
-  margin-top: 0;
-  margin-bottom: 0%;
-  flex-direction: column;
+  margin:auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
   background-color: #FCF0CC;
+}
+
+.real-container-20{
+  max-width: 600px;
+  margin:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  background-color: #FCF0CC;
+}
+
+.slick-slide img{
+  display: initial;
 }
 .app{
   background-color: #b998dc;
 }
 .bg {
-  display: flex;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin: auto;
-  max-width: max-content;
+  /* margin: auto; */
   background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpapers.co%2Fvy79-circle-purple-simple-minimal-pattern-background%2F&psig=AOvVaw1p_SPObVl3hOuQnYnyeXBB&ust=1652262256314000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDTotzS1PcCFQAAAAAdAAAAABAD");
 }
 
+.slick-next{
+  z-index: 99;
+  right:10%;
+  top:30px;
+  width: 50px;
+  height: 50px;
+}
+.slick-prev{
+  z-index: 99;
+  left:10%;
+  top:30px;
+  width: 50px;
+  height: 50px;
+}
+.slick-next::before{
+  font-size: 50px;
+}
+
+.slick-prev::before{
+  font-size: 50px;
+}
+
+
+.slick-list{
+  overflow: visible;
+}
+.con-slider-container{
+  height: 100%;
+}
 .newbody-header {
   background-color: #311451;
   color: #FFFFFF;
@@ -230,11 +265,11 @@ h4 {
 
 /*  Lead Styling */
 
-.lead1 div h1 {
+.lead1 div h1,.lead1-20 div h1 {
   font-size: 32px;
 }
 
-.lead1 div h4 {
+.lead1 div h4,.lead1-20 div h4 {
 
   font-size: 1.5rem;
 }
@@ -263,7 +298,7 @@ h4 {
   justify-content: center;
 }
 
-.lead1>div {
+.lead1>div, .lead1-20>div {
   text-align: center;
 }
 
@@ -276,8 +311,7 @@ h4 {
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  width: 100%;
-  gap: 15%;
+  gap:10%;
   background-color: #FCF0CC;
 }
 
