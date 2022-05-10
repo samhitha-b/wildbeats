@@ -20,7 +20,7 @@ function PhotoCollage(){
             <div className="image" id="image-4"></div>
             <div className="image spans-cols-2" id="image-5"></div>
         </div>
-        <div className="event">
+        <div className="event galley-event-name-big">
           <span className="event-name">Independence day</span>
             <div className="image spans-cols-2" id="image-6"></div>
             <div className="image spans-rows-2" id="image-7"></div>
@@ -52,7 +52,7 @@ function PhotoCollage(){
             <div className="image" id="image-24"></div>
             <div className="image spans-cols-2" id="image-25"></div>
         </div>
-        <div className="event">
+        <div className="event alley-event-name-big">
             <span className="event-name">Ganesh Chathurti</span>
             <div className="image spans-cols-2" id="image-26"></div>
             <div className="image spans-rows-2" id="image-27"></div>

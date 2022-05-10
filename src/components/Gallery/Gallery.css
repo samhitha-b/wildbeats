@@ -17,31 +17,39 @@
 }
 
 .photos {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   background-color: #ffff74;
 }
 
 .event {
-  max-width: 93.75vw;
-  background-color:#fbad3c;
-  border-radius: 15px;
-  padding: 20px;
-  padding-bottom: 50px;
-  margin-inline: auto;
-  margin-top: 30px;
-  margin-bottom:50px;
-  display: grid;
-  grid-template-columns: repeat(3,28vw);
-  grid-template-rows: 6vw repeat(3,28vw);
-  grid-template-areas: "title title title"
-                       "one one two"
-                       "three four two"
-                       "three five five";
-  justify-content: center;
-  gap: 12px;
+    max-width: 85vw;
+    background-color: #fbad3c;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-inline: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,25vw);
+    grid-template-rows: 8vw repeat(3,25vw);
+    grid-template-areas:
+        "title title title"
+        "one one two"
+        "three four two"
+        "three five five";
+    justify-content: center;
+    gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .event {
+    max-width: 95vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
 .event>.image{
   position: relative;
   width: 100%;
@@ -52,11 +60,12 @@
 
 .event-name{
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: min(10vw, 50px);
   font-weight: bold;
   line-height: 6vw;
   text-align: center;
   grid-area: title;
+  padding: 1vw;
 }
 
 #image-1 {
@@ -285,7 +294,7 @@
 @media (max-width:850px) {
   .event {
     grid-template-columns: repeat(3,27vw);
-    grid-template-rows: 5vw repeat(3,27vw);
+    grid-template-rows: 10vw repeat(3,27vw);
     grid-template-areas: "title title title"
                          "one one two"
                          "one one two"
@@ -293,7 +302,7 @@
     gap: 7px;  
   }
 .event-name{
-  line-height: 5vw;
+  line-height: 10vw;
 }
 
   #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
@@ -301,11 +310,16 @@
   }
 }
 
+@media (max-width:639px) {
+  .galley-event-name-big{
+    grid-template-rows: 20vw repeat(3,27vw);
+  }
+}
 @media (max-width:450px) {
   .event {
     padding: 12px;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 6vw 40vw 40vw 40vw;
+    grid-template-columns: 46vw 36vw;
+    grid-template-rows: max(6vw, 60px) 36vw 36vw 36vw;
     grid-template-areas: "title title"
                          "one two"
                          "three two"
@@ -314,7 +328,7 @@
   }
 
   .event-name{
-    line-height: 6vw;
+    line-height: 10vw;
   }
 
   #image-5,#image-10, #image-15, #image-20, #image-25, #image-30 {
