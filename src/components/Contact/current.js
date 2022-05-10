@@ -107,28 +107,52 @@ export default function NewBody(){
                     </div>
 
                     {/* 2 */}
-                    <div className="con-slide newbody">
-                    <div className="real-container-20">
-                        <div>
-                            <h1 className="newbody-header">Year 2020-21</h1>
-                        </div>
+                    {/* <div className="con-slide newbody">
+                        <div className="real-container-20">
+                            <div>
+                                <h1 className="newbody-header">Year 2020-21</h1>
+                            </div>
 
-                        <div className="newbody-members">                            
-                            <div className="lead1-20">
-                                <div className="memb">
-                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img" alt=""/>
-                                    <h1 className="name">Bivek Paul</h1>
-                                    <h4>Mentor</h4>
+                            <div className="newbody-members">                            
+                                <div className="lead1-20">
+                                    <div className="memb">
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img" alt=""/>
+                                        <h1 className="name">Bivek Paul</h1>
+                                        <h4>Mentor</h4>
+                                    </div>
+                                    <div className="memb">
+                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877736/Wildbeats-ppl/rahul_u0w4eq.png" className="mentor-img" alt=""/>
+                                        <h1 className="name">Rahul Nayak B.V</h1>
+                                        <h4>Mentor</h4>
+                                    </div>
                                 </div>
-                                <div className="memb">
-                                <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877736/Wildbeats-ppl/rahul_u0w4eq.png" className="mentor-img" alt=""/>
-                                    <h1 className="name">Rahul Nayak B.V</h1>
-                                    <h4>Mentor</h4>
+                            </div>
+                        
+                        
+                        
+                        </div>
+                        <div className="real-container-20">
+                            <div>
+                                <h1 className="newbody-header">Year 2019-20</h1>
+                            </div>
+
+                            <div className="newbody-members">                            
+                                <div className="lead1-20">
+                                    <div className="memb">
+                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877600/Wildbeats-ppl/Keerthi_kftxcp.png" className="mentor-img" alt=""/>
+                                        <h1 className="name">Keerthi Sreenivas</h1>
+                                        <h4>Mentor</h4>
+                                    </div>
+                                    <div className="memb">
+                                    <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877721/Wildbeats-ppl/Mekala_qpb2yn.png" className="mentor-img" alt=""/>
+                                        <h1 className="name">Mekala Bhargav</h1>
+                                        <h4>Mentor</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
+                    </div> */}
+                    <Timeline />
                 </Slider>
             </div>
          </div>

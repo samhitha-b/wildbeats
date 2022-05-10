@@ -14,7 +14,6 @@
 
 .real-container-20{
   max-width: 600px;
-  margin:auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
   background-color: #FCF0CC;
@@ -57,10 +56,7 @@
 
 
 .slick-list{
-  overflow: visible;
-}
-.con-slider-container{
-  height: 100%;
+  overflow: hidden;
 }
 .newbody-header {
   background-color: #311451;
@@ -73,6 +69,12 @@
   font-weight: 700;
   font-size: 2.5rem;
   margin-top: 0;
+}
+
+.newbody{
+  display: flex;
+  flex-direction: column;
+  gap:3%;
 }
 
 .newbody-members{
@@ -97,6 +99,7 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #b998dc;
 }
 
@@ -131,8 +134,7 @@
 .timeline {
   width: 100%;
   height: auto;
-  max-width: 1200px;
-  /* margin: 0 auto; */
+  max-width: 800px;
   position: relative;
 }
 
