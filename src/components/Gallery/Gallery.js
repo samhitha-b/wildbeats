@@ -52,7 +52,7 @@ function PhotoCollage(){
             <div className="image" id="image-24"></div>
             <div className="image spans-cols-2" id="image-25"></div>
         </div>
-        <div className="event alley-event-name-big">
+        <div className="event galley-event-name-big">
             <span className="event-name">Ganesh Chathurti</span>
             <div className="image spans-cols-2" id="image-26"></div>
             <div className="image spans-rows-2" id="image-27"></div>
