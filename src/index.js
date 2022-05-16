@@ -11,9 +11,22 @@ import Music from './components/Music/Music';
 import Drama from './components/Drama/Drama';
 import Dance from './components/Dance/Dance';
 import Contact from './components/Contact/Contact';
+// import ScrollToTop from './scrollToTop';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 ReactDOM.render(
   <HashRouter>
+  <ScrollToTop/>
   <Navbar/>
   <Routes>
     <Route exact path="/" element={<Home/>} />
