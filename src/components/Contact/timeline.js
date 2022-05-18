@@ -20,13 +20,13 @@ export default function Timeline(){
                             >
                                 <div className="mentor">
                                     <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img" alt=""/>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877605/Wildbeats-ppl/bivek_yq4xob.png" className="mentor-img two-itm" alt=""/>
                                         <h1>Bivek Paul</h1>
                                         <h4>Mentor</h4>
                                     </div>
                                     <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877736/Wildbeats-ppl/rahul_u0w4eq.png" className="mentor-img" alt=""/>
-                                        <h1>Rahul Nayak B.V</h1>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877736/Wildbeats-ppl/rahul_u0w4eq.png" className="mentor-img two-itm" alt=""/>
+                                        <h1>Rahul Nayak</h1>
                                         <h4>Mentor</h4>
                                     </div>
                                 </div>
@@ -42,21 +42,20 @@ export default function Timeline(){
                                 // open = {timeHover === 2 ? true : false}
                                 open = {false}
                             >
-                                
-                                <div className="mentor">
-                                    <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877600/Wildbeats-ppl/Keerthi_kftxcp.png" className="mentor-img" alt=""/>
-                                        <h1>Keerthi Sreenivas</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                    <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877721/Wildbeats-ppl/Mekala_qpb2yn.png" className="mentor-img" alt=""/>
-                                        <h1>Mekala Bhargav</h1>
-                                        <h4>Mentor</h4>
-                                    </div>
-                                </div>
-                                
+                                           
                                 <div className="lead">
+                                    <div className="lead1-19">
+                                        <div>
+                                            <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877600/Wildbeats-ppl/Keerthi_kftxcp.png" className="mentor-img" alt=""/>
+                                            <h1>Keerthi Sreenivas</h1>
+                                            <h4>Mentor</h4>
+                                        </div>
+                                        <div>
+                                            <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877721/Wildbeats-ppl/Mekala_qpb2yn.png" className="mentor-img" alt=""/>
+                                            <h1>Mekala Bhargav</h1>
+                                            <h4>Mentor</h4>
+                                        </div>
+                                    </div>  
                                     <div className="lead1-19">
                                         <div>
                                             <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877546/Wildbeats-ppl/deepesh_lfcyvk.png" className="leadimg" alt=""/>
@@ -105,12 +104,12 @@ export default function Timeline(){
                             >
                                 <div className="mentor">
                                     <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877544/Wildbeats-ppl/sai_dnbthd.png" className="mentor-img" alt=""/>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877544/Wildbeats-ppl/sai_dnbthd.png" className="mentor-img two-itm" alt=""/>
                                         <h1>Sai Surya Kiran</h1>
                                         <h4>Mentor</h4>
                                     </div>
                                     <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877547/Wildbeats-ppl/sandeep_da7tes.png" className="mentor-img" alt=""/>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877547/Wildbeats-ppl/sandeep_da7tes.png" className="mentor-img two-itm" alt=""/>
                                         <h1>Sandeep Kumar</h1>
                                         <h4>Mentor</h4>
                                     </div>
@@ -128,12 +127,12 @@ export default function Timeline(){
                             >
                                 <div className="mentor">
                                     <div>
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877543/Wildbeats-ppl/pushpak_bq9zjx.png" className="mentor-img" alt=""/>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877543/Wildbeats-ppl/pushpak_bq9zjx.png" className="mentor-img two-itm" alt=""/>
                                         <h1>Pushpak Raj</h1>
                                         <h4>Mentor</h4>
                                     </div>
                                     <div> 
-                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877551/Wildbeats-ppl/srija_b7gbcq.png" className="mentor-img" alt=""/>
+                                        <img src="https://res.cloudinary.com/db5gjqx6a/image/upload/v1648877551/Wildbeats-ppl/srija_b7gbcq.png" className="mentor-img two-itm" alt=""/>
                                         <h1>Srija Munjuluri</h1>
                                         <h4>Mentor</h4>
                                     </div>

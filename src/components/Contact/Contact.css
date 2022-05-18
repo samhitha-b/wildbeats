@@ -13,8 +13,7 @@
 }
 
 .real-container-20{
-  max-width: 700px;
-  margin: auto;
+  max-width: 600px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
   background-color: #FCF0CC;
@@ -30,7 +29,6 @@
   padding-top: 2%;
   padding-bottom: 2%;
   /* margin: auto; */
-  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpapers.co%2Fvy79-circle-purple-simple-minimal-pattern-background%2F&psig=AOvVaw1p_SPObVl3hOuQnYnyeXBB&ust=1652262256314000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDTotzS1PcCFQAAAAAdAAAAABAD");
 }
 
 .slick-next{
@@ -55,10 +53,10 @@
   font-size: 50px;
 }
 
-.slick-list{
-  transition: all 0.5s;
-}
 
+.slick-list{
+  overflow: hidden;
+}
 .newbody-header {
   background-color: #311451;
   color: #FFFFFF;
@@ -70,6 +68,11 @@
   font-weight: 700;
   font-size: 2.5rem;
   margin-top: 0;
+}
+
+.newbody{
+  display: flex;
+  flex-direction: column;
 }
 
 .newbody-members{
@@ -92,11 +95,9 @@
 
 /*  Timeline  */
 .container {
-  padding-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: #b998dc;
 }
 
@@ -130,9 +131,9 @@
 
 .timeline {
   width: 100%;
-  height: auto;
   max-width: 1000px;
-  position: relative;
+  padding: 4%;
+  box-sizing: content-box;
 }
 
 .timeline ul {
@@ -156,7 +157,7 @@
   background-color: #311451;
   color: #FFFFFF;
   /* font-size: 140%; */
-  /* width: 120%; */
+  /* width: 40%; */
 }
 
 
@@ -166,7 +167,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10%;
 }
 
 
@@ -174,11 +174,10 @@
 .connections {
   display: flex;
   justify-content: center;
-  gap: 3%;
 }
 
 .faculty-img {
-  width: 20%;
+  max-width: 150px;
 }
 
 
@@ -207,7 +206,6 @@
 .mentor {
   display: flex;
   justify-content: space-evenly;
-  gap: 7.8%;
   margin-top: 4%;
   padding: 0;
   background-color: #FCF0CC;
@@ -217,7 +215,6 @@
 .mentor-newbody {
   display: flex;
   justify-content: space-evenly;
-  gap: 7.8%;
   margin-top: 4%;
   padding: 0;
   background-color: #FCF0CC;
@@ -245,9 +242,11 @@
 }
 
 .mentor-img {
-  width: 100%;
   max-width: 150px;
-  max-height: 150px;
+}
+
+.two-itm{
+  max-width: 200px;
 }
 
 h4 {
@@ -263,6 +262,10 @@ h4 {
 
 
 /*  Lead Styling */
+
+.lead{
+  padding: 2%;
+}
 
 .lead1 div h1,.lead1-20 div h1 {
   font-size: 32px;
@@ -302,7 +305,7 @@ h4 {
 }
 
 .lead1>div:last-child {
-  grid-column: auto / span 3;
+  grid-column: span 3;
 }
 
 .lead1-20 {
@@ -310,47 +313,26 @@ h4 {
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  gap:10%;
   background-color: #FCF0CC;
 }
 
 .lead1-19 {
   display: grid;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* margin: 0 auto; */
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
   background-color: #FCF0CC;
 }
 
-/* .lead1-19{ */
-/* display: flex; */
-/* flex-direction: column; */
-/* justify-content: center; */
-/* margin: 0 auto; */
-/* align-items: center;
-  width: 100%;
-  gap: 15%;
-  background-color: #FCF0CC; */
-/* } */
+.lead1-19:last-child {
+  grid-template-columns: 1fr;
+}
+
 
 .leadimg {
-  position: relative;
-  margin-bottom: 0px;
-  width: 100%;
   max-width: 150px;
-  max-height: 150px;
-  min-width: 70px;
 }
 
-.span-2{
-  grid-column: span 2;
-}
-.span-2 > img {
-  width: 20%;
-}
 /* Magazine */
 .magazine {
   background-color: #202B90;
@@ -433,3 +415,73 @@ h4 {
 }
 
 /* media query  */
+
+@media  screen and (max-width:1100px) {
+  .real-container{
+    margin: auto;
+  }
+  .timeline{
+    max-width: 800px;
+  }
+  .newbody{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .lead1>div>h1{
+    font-size: 25px;
+  }
+  .lead1>div>h4{
+    font-size: 1.2rem;
+  }
+  .newbody-header{
+    font-size: 35px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .mentor-img, .leadimg{
+    max-width: 100px;
+  }
+  
+}
+
+@media screen and (max-width:844px){
+  .real-container{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .lead1>div:last-child {
+    grid-column: span 2;
+  }
+  .lead1{
+    grid-template-columns: 1fr 1fr;
+  }
+  .mentor h1{
+    font-size: 25px;
+  }
+  .mentor h4{
+    font-size: 1.2rem;
+  }
+  .lead1-19>div>h1{
+    font-size: 25px;
+  }
+  .lead1-19>div>h4{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:544px){
+  .real-container{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .lead1>div:last-child {
+    grid-column: span 1;
+  }
+  .lead1{
+    grid-template-columns: 1fr;
+  }
+  .heading{
+    font-size: 30px;
+  }
+}
